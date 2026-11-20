@@ -9,8 +9,7 @@ public class Account {
      * with 1, to requestedName until an available username is found,
      * as described in part (a).
      */
-    public Account(String requestedName)
-    {
+    public Account(String requestedName) {
 
     }
 
@@ -29,8 +28,7 @@ public class Account {
      * username.length() >= 2
      * Postcondition: username is unchanged.
      */
-    public String getShortenedName()
-    {
+    public String getShortenedName() {
 
     }
 }
