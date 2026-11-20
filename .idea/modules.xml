@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/1884-Software-Coding-Sprint.iml" filepath="$PROJECT_DIR$/.idea/1884-Software-Coding-Sprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1884-Software-Coding-Sprint.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1884-Software-Coding-Sprint.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1884-Software-Coding-Sprint.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1884-Software-Coding-Sprint.test.iml" />
     </modules>
   </component>
