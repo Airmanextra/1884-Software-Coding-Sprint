@@ -14,9 +14,6 @@ import org.wpilib.framework.TimedRobot;
  * this project, you must also update the Main.java file in the project.
  */
 public class Robot extends TimedRobot {
-  private Command autonomousCommand;
-
-  private final RobotContainer robotContainer;
 
   /**
    * This function is run when the robot is first started up and should be used for any
@@ -25,7 +22,6 @@ public class Robot extends TimedRobot {
   public Robot() {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
-    robotContainer = new RobotContainer();
   }
 
   /**
@@ -54,12 +50,7 @@ public class Robot extends TimedRobot {
   /** This autonomous runs the autonomous command selected by your {@link RobotContainer} class. */
   @Override
   public void autonomousInit() {
-    autonomousCommand = robotContainer.getAutonomousCommand();
 
-    // schedule the autonomous command (example)
-    if (autonomousCommand != null) {
-      CommandScheduler.getInstance().schedule(autonomousCommand);
-    }
   }
 
   /** This function is called periodically during autonomous. */
@@ -68,13 +59,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousExit() {
-    // This makes sure that the autonomous stops running when
-    // autonomous mode ends. If you want the autonomous to
-    // continue until interrupted by another command, remove
-    // this line or comment it out.
-    if (autonomousCommand != null) {
-      autonomousCommand.cancel();
-    }
+
   }
 
   /** This function is called once each time the robot enters operator control. */
@@ -87,8 +72,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void utilityInit() {
-    // Cancels all running commands at the start of utility mode.
-    CommandScheduler.getInstance().cancelAll();
+
   }
 
   /** This function is called periodically during utility mode. */
